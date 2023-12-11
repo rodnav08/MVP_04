@@ -80,6 +80,9 @@ def predict(form: YoutuberSchema):
     # Carregando modelo
     ml_path = 'ml_model/model.pkl'
     modelo = Model.carrega_modelo(ml_path)
+    # Carregando o scaler
+    scaler_path = 'ml_model/scaler.pkl'
+    scaler = Model.carrega_modelo(scaler_path)
     
     youtuber = Youtuber(
         name=form.name.strip(),
@@ -90,7 +93,7 @@ def predict(form: YoutuberSchema):
         category=form.category, 
         video_views_30=form.video_views_30, 
         highest_earnings=form.highest_earnings, 
-        outcome= Model.preditor(modelo, form)
+        outcome= Model.preditor(modelo,scaler, form)
     )
     
     logger.debug(f"Adicionando canal do Youtube de nome: '{youtuber.name}'")

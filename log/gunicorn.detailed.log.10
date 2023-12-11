@@ -1,0 +1,85 @@
+[2023-12-11 17:09:50,414] INFO _log() L186  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.93:5000 - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:09:50,419] INFO _log() L186  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:09:50,424] INFO _log() L186   * Restarting with stat - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:09:57,122] INFO _log() L186  127.0.0.1 - - [11/Dec/2023 17:09:57] "GET /youtubers HTTP/1.1" 200 - - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:10:24,469] INFO _log() L186  127.0.0.1 - - [11/Dec/2023 17:10:24] "GET /youtubers?name=Chapeus%20de%20Palha HTTP/1.1" 200 - - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:10:25,438] ERROR log_exception() L1449 Exception on /youtuber [POST] - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_openapi3\scaffold.py", line 104, in view_func
+    response = func(**result)
+               ^^^^^^^^^^^^^^
+  File "E:\SIMDUT\GPD\Engenharia de Software\Qualidade de Software, Segurança e Sistemas Inteligentes\MVP\mvp-qualidade-seguranca-sistemas-inteligentes\mvp-qualidade-seguranca-sistemas-inteligentes\MVP\api\app.py", line 96, in predict
+    outcome= Model.preditor(modelo,scaler, form)
+                                   ^^^^^^
+NameError: name 'scaler' is not defined
+[2023-12-11 17:10:25,451] INFO _log() L186  127.0.0.1 - - [11/Dec/2023 17:10:25] "[35m[1mPOST /youtuber HTTP/1.1[0m" 500 - - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:10:27,878] INFO _log() L186  127.0.0.1 - - [11/Dec/2023 17:10:27] "GET /youtubers HTTP/1.1" 200 - - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:11:31,002] INFO _log() L186   * Detected change in 'E:\\SIMDUT\\GPD\\Engenharia de Software\\Qualidade de Software, Segurança e Sistemas Inteligentes\\MVP\\mvp-qualidade-seguranca-sistemas-inteligentes\\mvp-qualidade-seguranca-sistemas-inteligentes\\MVP\\api\\app.py', reloading - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:11:31,252] INFO _log() L186   * Restarting with stat - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:11:50,519] INFO _log() L186  127.0.0.1 - - [11/Dec/2023 17:11:50] "GET /youtubers?name=hh HTTP/1.1" 200 - - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:11:51,293] ERROR log_exception() L1449 Exception on /youtuber [POST] - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_openapi3\scaffold.py", line 104, in view_func
+    response = func(**result)
+               ^^^^^^^^^^^^^^
+  File "E:\SIMDUT\GPD\Engenharia de Software\Qualidade de Software, Segurança e Sistemas Inteligentes\MVP\mvp-qualidade-seguranca-sistemas-inteligentes\mvp-qualidade-seguranca-sistemas-inteligentes\MVP\api\app.py", line 96, in predict
+    outcome= Model.preditor(modelo,scaler, form)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\SIMDUT\GPD\Engenharia de Software\Qualidade de Software, Segurança e Sistemas Inteligentes\MVP\mvp-qualidade-seguranca-sistemas-inteligentes\mvp-qualidade-seguranca-sistemas-inteligentes\MVP\api\model\modelo.py", line 49, in preditor
+    X_input_scaled = scaler.transform(X_input)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\preprocessing\_data.py", line 992, in transform
+    X = self._validate_data(
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\base.py", line 565, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py", line 902, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got 1D array instead:
+array=[ 45. 545.  55.   0.   0. 545.  55.].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+[2023-12-11 17:11:51,320] INFO _log() L186  127.0.0.1 - - [11/Dec/2023 17:11:51] "[35m[1mPOST /youtuber HTTP/1.1[0m" 500 - - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:11:51,989] INFO _log() L186  127.0.0.1 - - [11/Dec/2023 17:11:51] "GET /youtubers HTTP/1.1" 200 - - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:13:21,606] INFO _log() L186   * Detected change in 'E:\\SIMDUT\\GPD\\Engenharia de Software\\Qualidade de Software, Segurança e Sistemas Inteligentes\\MVP\\mvp-qualidade-seguranca-sistemas-inteligentes\\mvp-qualidade-seguranca-sistemas-inteligentes\\MVP\\api\\model\\modelo.py', reloading - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:13:21,891] INFO _log() L186   * Restarting with stat - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:13:37,904] INFO _log() L186  127.0.0.1 - - [11/Dec/2023 17:13:37] "GET /youtubers?name=qer HTTP/1.1" 200 - - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:13:38,836] INFO _log() L186  127.0.0.1 - - [11/Dec/2023 17:13:38] "[35m[1mPOST /youtuber HTTP/1.1[0m" 500 - - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:13:40,109] INFO _log() L186  127.0.0.1 - - [11/Dec/2023 17:13:40] "GET /youtubers HTTP/1.1" 200 - - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
+[2023-12-11 17:15:01,279] INFO _log() L186   * Restarting with stat - call_trace=C:\Users\Simdut\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L186 
